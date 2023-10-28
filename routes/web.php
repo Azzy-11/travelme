@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\TopicController;
+use App\Http\Controllers\Admin\TopController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +20,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// TopicController
+Route::controller(TopicController::class)->prefix('admin')->name('admin.')->middleware('auth')->group(function(){
+    Route::get('topic/create', 'add')->name('topic.add');
+    Route::post('topic/create', 'create')->name('topic.create');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

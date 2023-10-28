@@ -1,0 +1,35 @@
+body {
+  background-color: #fff5ee;
+}
+
+
+/* header */
+.header {
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+
+.header-logo {
+  height: 150px;
+  
+}
+
+.logo-img {
+  height: 100%;
+}
+
+.nav-list {
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.nav-item {
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-item + .nav-item {
+  margin-left: 20px;
+}
