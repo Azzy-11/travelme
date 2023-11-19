@@ -96,4 +96,63 @@ body {
   font-weight: bold;
 }
 
+/* list Page*/
+.list-ttl {
+  color: #000;
+  text-shadow: 4px 1px #6f9fde;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-new {
+  width: 60%;
+}
+
+.explore-post {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.list-btn {
+  text-align: center;
+}
+
+.list-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  width: 340px;
+}
+
+.list-item:nth-of-type(n + 4) {
+  margin-top: 40px;
+}
+
+.list-img {
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.list-post-ttl {
+  margin-top: 16px;
+}
+
+.list-txt {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post-img {
+  max-width: 300px; 
+}
 

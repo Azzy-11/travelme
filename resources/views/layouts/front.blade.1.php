@@ -39,23 +39,13 @@
                         {{-- ログインしていなかったらログイン画面へのリンクを表示 --}}
                         @guest
                         <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
-                        <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">MyPage</a></li>
-                        <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Fav</a></li>
-                        <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Post</a></li>
-                        <li class="nav-item"><a href="{{ url('topic/index') }}" class="nav-link">Explore</a></li>
                          {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
                         @else
-                        <li class="nav-item">
-                        <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
                         <li class="nav-item"><a href="{{ url('/') }}" class="nav-link">MyPage</a></li>
                         <li class="nav-item"><a href="{{ url('/') }}" class="nav-link">Fav</a></li>
-                        <li class="nav-item"><a href="{{ url('admin/topic/create') }}" class="nav-link">Post</a></li>
-                        <li class="nav-item"><a href="{{ url('admin/topic/index') }}" class="nav-link">Explore</a></li>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
+                        <li class="nav-item"><a href="{{ url('/') }}" class="nav-link">Post</a></li>
                         @endguest
-                        
+                        <li class="nav-item"><a href="{{ url('/') }}" class="nav-link">Explore</a></li>
                     </ul>
                 </nav>
             </header>
