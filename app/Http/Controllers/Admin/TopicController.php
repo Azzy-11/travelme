@@ -97,7 +97,7 @@ class TopicController extends Controller
         // 該当するデータを上書きして保存する
         $topic->fill($topic_form)->save();
 
-        return redirect('admin/topic');
+        return redirect('admin/topic/index');
     }
     
         public function delete(Request $request)
@@ -108,6 +108,6 @@ class TopicController extends Controller
         // 削除する
         $topic->delete();
 
-        return redirect('admin/topic/');
+        return redirect('admin/topic/index');
     }
 }

@@ -38,7 +38,7 @@
                 <option value="Saitama" @if("Saitama" === (int)old('location')) selected @endif>埼玉県</option>
                 <option value="Chiba" @if("Chiba" === (int)old('location')) selected @endif>千葉県</option>
                 <option value="Tokyo" @if("Tokyo" === (int)old('location')) selected @endif>東京都</option>
-                <option value="Kanagawa" @if("Kanagawa" === (int)old('location')) selected @endif神奈川県</option>
+                <option value="Kanagawa" @if("Kanagawa" === (int)old('location')) selected @endif>神奈川県</option>
                 <option value="Niigata" @if("Niigata" === (int)old('location')) selected @endif>新潟県</option>
                 <option value="Toyama" @if("Toyama" === (int)old('location')) selected @endif>富山県</option>
                 <option value="Ishikawa" @if("Ishikawa" === (int)old('location')) selected @endif>石川県</option>

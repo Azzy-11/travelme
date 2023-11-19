@@ -4,7 +4,7 @@
 @section('content')
 
 <section class="section-inner">
-  <h1 class="list-ttl">現在、準備中です</h1>
+  <h1 class="list-ttl"><a href="/login">ログイン</a>または<a href="/register">新規登録</a>してください</h1>
 </section>
 
 @endsection
